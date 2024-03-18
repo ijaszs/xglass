@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block content %}
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ prodect.image.url}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{prodect.product_name}}</h5>
+        <p class="card-text">{{prodect.description}}</p>
+        <p class="card-text"><strong>Price:</strong> {{ prodect.price }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
